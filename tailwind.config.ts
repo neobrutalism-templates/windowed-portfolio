@@ -1,20 +1,21 @@
 import type { Config } from 'tailwindcss'
 
-const config: Config = {
+const config = {
+  darkMode: ['class'],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
+  prefix: '',
   theme: {
     extend: {
       colors: {
-        bg: '#daf5f0',
-        main: '#c4a1ff',
-        mainAccent: '#9e66ff',
+        main: '#a388ee',
+        bg: '#e3dff2',
       },
       borderRadius: {
-        base: '5px',
+        base: '0px',
       },
       boxShadow: {
         base: '4px 4px 0px 0px rgba(0,0,0,1)',
@@ -23,12 +24,18 @@ const config: Config = {
         boxShadowX: '4px',
         boxShadowY: '4px',
       },
-      fontWeight: {
-        base: '500',
-        heading: '700',
-      },
+    },
+    screens: {
+      smallHeight: { raw: '(max-height: 550px)' },
+      w800: { max: '800px' },
+      w700: { max: '700px' },
+      w600: { max: '600px' },
+      w500: { max: '500px' },
+      w450: { max: '450px' },
+      w400: { max: '400px' },
     },
   },
-  plugins: [],
-}
+  plugins: [require('tailwindcss-animate')],
+} satisfies Config
+
 export default config
