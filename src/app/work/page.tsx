@@ -37,7 +37,7 @@ export default function Page() {
       {PROJECTS.map((project, id) => {
         return (
           <div
-            className="border-b-4 border-r-4 border-b-black border-r-black bg-bg p-8 py-10 w600:px-[30px] w400:px-5"
+            className="dark:bg-darkBg text-text dark:text-darkText border-b-4 border-r-4 border-b-black border-r-black bg-bg p-8 py-10 w600:px-[30px] w400:px-5"
             key={id}
           >
             <div className="mx-auto w-3/4 w800:w-full">
@@ -63,14 +63,14 @@ export default function Page() {
 
                 <div className="mt-8 grid grid-cols-2 gap-5 text-base w400:text-sm">
                   <a
-                    className="cursor-pointer rounded-base border-2 border-black bg-main px-4 py-2 text-center uppercase shadow-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
+                    className="border-border dark:border-darkBorder text-text shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-main px-4 py-2 text-center uppercase transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none"
                     href={project.liveLink}
                     target="_blank"
                   >
                     Visit
                   </a>
                   <a
-                    className="cursor-pointer rounded-base border-2 border-black bg-main px-4 py-2 text-center uppercase shadow-base transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
+                    className="border-border dark:border-darkBorder text-text shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-main px-4 py-2 text-center uppercase transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none"
                     href={project.repoUrl}
                     target="_blank"
                   >

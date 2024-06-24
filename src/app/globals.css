@@ -14,7 +14,7 @@
 }
 
 body {
-  @apply flex min-h-[100dvh] w-full items-center justify-center font-bold selection:bg-black selection:text-white portrait:h-[100dvh];
+  @apply dark:bg-darkBg flex min-h-[100dvh] w-full items-center justify-center bg-white font-bold selection:bg-black selection:text-white portrait:h-[100dvh];
 }
 
 .main::-webkit-scrollbar {
