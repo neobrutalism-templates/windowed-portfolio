@@ -46,10 +46,10 @@ previewImage: '/my-project.png'
 
 ##### Image aspect ratio
 
-Inside `app/work/page.tsx`  `previewImage` is wrapped inside AspectRatio component. Change the `ratio` prop so it suits your needs (default preview images are 600 x 300, so I set the ratio to be `2 / 1`).
+Inside `app/work/page.tsx` `previewImage` is wrapped inside AspectRatio component. Change the `ratio` prop so it suits your needs (default preview images are 600 x 300, so I set the ratio to be `2 / 1`).
 
 ### Styling
 
-To change the styling visit [styling docs](https://neobrutalism-components.vercel.app/docs/styling), and copy the desired styling to tailwind config like it's shown in the styling docs.
+To change the styling visit [styling docs](https://neobrutalism.dev/styling), and copy the desired styling to your css like it's shown in the styling docs.
 
 I didn't add custom font weights for this template since I think it's best that way.
